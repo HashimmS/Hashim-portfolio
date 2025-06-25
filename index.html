@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdul Hashim S - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     :root {
-      --primary: #fca5a5; /* Light pink */
-      --accent: #93c5fd;  /* Light blue */
+      --primary: #fca5a5;
+      --accent: #93c5fd;
       --bg: #fefefe;
       --text: #333;
     }
@@ -39,6 +41,10 @@
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     section {
       padding: 2rem;
       max-width: 1000px;
@@ -60,6 +66,20 @@
       padding: 1rem;
       margin: 1rem 0;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon-hover {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-hover:hover {
+      transform: translateY(-5px);
     }
 
     footer {
@@ -68,24 +88,33 @@
       text-align: center;
       padding: 1rem;
     }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Abdul Hashim S</h1>
-    <p>Aspiring AI Engineer |  Data Science Student</p>
+    <p>Aspiring AI Engineer | Data Science Student</p>
     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" class="icon-hover">About</a>
+      <a href="#skills" class="icon-hover">Skills</a>
+      <a href="#projects" class="icon-hover">Projects</a>
+      <a href="#certifications" class="icon-hover">Certifications</a>
+      <a href="#contact" class="icon-hover">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2 class="section-title">About Me</h2>
-    <p> I am currently pursuing a Bachelor of Technology in Artificial Intelligence and Data Science at Vel Tech University. With practical experience in AI,ML,DL and IoT projects Iam passionate about leveraging emerging technologies to address real-world challenges and contribute to innovation within the tech industry. I am dedicated, hardworking, and consistently committed to delivering my best in every endeavor. </p>
+    <p>I am currently pursuing a Bachelor of Technology in Artificial Intelligence and Data Science at Vel Tech University. With practical experience in AI, ML, DL, and IoT projects, I am passionate about leveraging emerging technologies to address real-world challenges and contribute to innovation within the tech industry. I am dedicated, hardworking, and consistently committed to delivering my best in every endeavor.</p>
   </section>
 
   <section id="skills">
@@ -94,7 +123,7 @@
       <li>Programming: Python</li>
       <li>Data Visualization: Power BI</li>
       <li>IoT: NodeMCU, basic circuits</li>
-      <li>Soft Skills: Communication, Teamwork, Time Management</li>
+      <li>Soft Skills: Communication, Teamwork, Time Management, Leadership</li>
       <li>AI Tools & Platforms: Familiar with using AI for research, problem-solving, and content generation</li>
     </ul>
   </section>
@@ -104,13 +133,23 @@
     <div class="card">
       <h3>Smart Parking System (IoT)</h3>
       <p>Developed using NodeMCU and ultrasonic sensors. Displays real-time slot availability and sends alerts to users.</p>
-      <h3>Inventory Optimization And Demand Forecasting Using Machine Learning</h3>
+    </div>
+    <div class="card">
+      <h3>Inventory Optimization And Demand Forecasting</h3>
       <p>Built an inventory demand forecasting system using ARIMA and Random Forest Regression, combining time series and supervised learning techniques.</p>
-      <h3> Visualizing Dasdboard</h3>
-      <p>Created Bitcoin Analysis Dashboard: Trends and Insights (2022-2025) in POWER BI.</p>
-      <h3>CROP YIELD PREDICTIONSYSTEM USING XGBOOST</h3>
-      <p>Developed an AI-based crop yield prediction system using XGBoost, leveraging historical, climatic, and soil data to deliver accurate forecasts</p>
-
+    </div>
+    <div class="card">
+      <h3>Inventory Demand Forecasting Using ARIMA</h3>
+      <p>Implemented a standalone ARIMA-based model to predict future inventory requirements using historical demand data, improving stock management efficiency.</p>
+    </div>
+    <div class="card">
+      <h3>Bitcoin Dashboard</h3>
+      <p>Created a Bitcoin Analysis Dashboard: Trends and Insights (2022-2025) in Power BI.</p>
+    </div>
+    <div class="card">
+      <h3>Crop Yield Prediction Using XGBoost</h3>
+      <p>Developed an AI-based crop yield prediction system using XGBoost, leveraging historical, climatic, and soil data to deliver accurate forecasts.</p>
+    </div>
   </section>
 
   <section id="certifications">
@@ -125,13 +164,15 @@
 
   <section id="contact">
     <h2 class="section-title">Contact</h2>
-    <p>Email: hashimubaid@gmail.com</p>
-    <p>GitHub: <a href="https:// https://github.com/HashimmS " target="_blank">github</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hashim-10lm " target="_blank">Linked in</a></p>
+    <p>Email: hashimubaid2004@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/HashimmS" target="_blank">github.com/HashimmS</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hashim-10lm" target="_blank">linkedin.com/in/hashim-10lm</a></p>
   </section>
 
   <footer>
     <p>© 2025 Abdul Hashim S | Portfolio Website</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
